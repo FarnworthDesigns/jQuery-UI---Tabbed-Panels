@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery UI - Tabbed Panels</title>
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#tabbedPanel").tabs({
+	  show: "fadeIn",
+	  hide: "fadeOut",
+	  heightStyle: "auto"
+  });
+  }); // end ready
+</script>
+</head>
+
+<body>
+  <header>
+		<h1>jQuery UI - Tabbed Panels</h1>
+	</header>
+  <section>
+	<div id="tabbedPanel">
+    
+  <!-- Tabs -->
+    <ul>
+      <li><a href="#details">Product Details</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+    
+  <!-- Panels -->
+    <div id="details">
+      <p>Content for "Product Details" goes here.</p>
+    </div>
+      <div id="reviews">
+        <p>Content for "Reviews" goes here.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel tellus vitae ante molestie vulputate ac id odio. Nulla venenatis blandit facilisis. Vivamus mauris orci, tincidunt nec odio vel, rhoncus facilisis augue. Vivamus euismod urna et sapien laoreet efficitur. Praesent placerat dignissim tellus ut rhoncus. Ut vehicula, est eu ultrices varius, mi erat vestibulum dui, quis sodales eros ex nec nulla. Proin imperdiet pulvinar risus ut egestas. Suspendisse auctor urna quis massa consequat sagittis. Proin a euismod magna. Integer ut augue eu ante tempor varius. Donec eu est ultrices, sodales lectus sit amet, interdum diam. Morbi a ligula ut metus vehicula ornare. Fusce vel dui nec metus tincidunt pretium. Phasellus posuere malesuada quam. Integer ultricies magna augue, nec commodo quam scelerisque ultrices.</p>
+    </div>
+    <div id="order">
+      <p>Content for "Order" goes here.</p>
+    </div>
+    
+	</div> <!-- end tabbed panels -->
+    </section>
+</body>
+</html>
